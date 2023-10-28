@@ -279,7 +279,7 @@ function Home() {
 
           <Box style={{ backgroundColor: "purplex" }}>
             <Grid container spacing={3}>
-              {Articles?.map((result, index) => index < 6 && (
+              {Articles?.map((result, index) =>  (
                 <HomeCard key={index} result={result} onClick={() => {
                   console.log('navigate');
                   navigate(`/fullnews/${result?.category[0]}/${result?.title}`, { state: { data: result } });
@@ -288,7 +288,7 @@ function Home() {
             </Grid>
           </Box>
 
-          <Divider textAlign="left" sx={{ marginBlock: 3 }} style={{ fontSize: "50px", color: "black" }}>BJP NEWS</Divider>
+          <Divider textAlign="left" sx={{ marginBlock: 3 }} style={{ fontSize: "40px", color: "black" }}>BJP NEWS</Divider>
 
           <Box>
             <Box >
@@ -303,7 +303,7 @@ function Home() {
             </Box>
           </Box>
 
-          <Divider textAlign="left" sx={{ marginBlock: 3 }} style={{ fontSize: "50px", color: "black" }}>CONGRESS NEWS</Divider>
+          <Divider textAlign="left" sx={{ marginBlock: 3 }} style={{ fontSize: "40px", color: "black" }}>CONGRESS NEWS</Divider>
 
           <Box>
             <Grid container spacing={3}>
@@ -316,7 +316,7 @@ function Home() {
             </Grid>
           </Box>
 
-          <Divider textAlign="left" sx={{ marginBlock: 3 }} style={{ fontSize: "50px", color: "black" }}>SPORTS NEWS</Divider>
+          <Divider textAlign="left" sx={{ marginBlock: 3 }} style={{ fontSize: "40px", color: "black" }}>SPORTS NEWS</Divider>
 
           <Box>
             <Grid container spacing={3}>
